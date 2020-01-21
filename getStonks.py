@@ -10,7 +10,7 @@ endpoint = "https://api.worldtradingdata.com/api/v1/stock"
 
 api_endpoint = "https://api.polygon.io/v1/last/stocks/"
 
-stonks_list = ["APPN","TSLA","^DJI","AAPL","SPCE","FNMA","V"]
+stonks_list = ["TSLA","^DJI","SPCE"]
 length = len(stonks_list)
 number_of_fours = int(length/4)
 modulus = length%4
