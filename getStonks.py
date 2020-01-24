@@ -1,12 +1,15 @@
 import requests
 import json
+import os
+import config
 
 
-api_key = "" # Add your World Trading Data API Key here inside the quotes
+
+ # Add your World Trading Data API Key here inside the quotes
 endpoint = "https://api.worldtradingdata.com/api/v1/stock"
 
 
-
+api_key=os.getenv[('API_KEY')]
 
 api_endpoint = "https://api.polygon.io/v1/last/stocks/"
 
@@ -57,6 +60,6 @@ for x in range(0,modulus):
     if difference > 0:
         print(symbol + " $" + price + " (+" + str(difference) + ")")
     else:
-        print(symbol + " $" + price + " (-" + str(difference) + ")")
+        print(symbol + " $" + price + " (" + str(difference) + ")")
 
 
